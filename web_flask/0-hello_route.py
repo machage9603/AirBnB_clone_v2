@@ -6,12 +6,12 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@app.route()'/airbnb-onepage/'
 def hello_hbnb():
     """
-    Routing to root, strict_slashes ensure
+    Routing to root, airbnb-onepage ensure
     the URL works when it ends both with or without the /
-    """
+    ""
     return "Hello HBNB!"
 
 
